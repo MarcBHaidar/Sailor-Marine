@@ -241,17 +241,6 @@ jQuery(document).ready(function($) {
 
 });
 
-// function sendMail() {
-//     var link = "mailto:myemail@example.com"
-//              + "?cc="
-//              + "&subject=" + escape("This is my subject")
-//              + "&body=" FirstName+ escape(document.getElementById('fname').value) 
-// 			 			+ escape(document.getElementById('lname').value) 
-// 						+ escape(document.getElementById('message').value)
-//     ;
-
-//     window.location.href = link;
-// }
 function sendMail() {
     var firstName = document.getElementById('fname').value;
     var lastName = document.getElementById('lname').value;
@@ -260,7 +249,7 @@ function sendMail() {
 
     var body = "FirstName: " + firstName + "%0A" + "LastName: " + lastName + "%0A" + "Message: " + message;
 
-    var link = "mailto:ziad@sailorzc.com"
+    var link = "mailto:ziad@sailorzc.com,info@sailorzc.com"
         + "?cc="
         + "&subject=" + subject
         + "&body=" + body;
